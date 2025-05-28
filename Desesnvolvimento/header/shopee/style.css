@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+}
+header{
+    width: 100%;
+    padding: 8px 60px;
+    background: linear-gradient(179deg,rgba(217, 52, 11, 1) 12%, rgba(253, 92, 50, 0.83) 100%, rgba(255, 100, 51, 1) 99%);
+}
+.primeiraDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.primeiraDiv2{
+    display: flex;
+    align-items: center;
+}
+.primeiraDiv2 nav{
+    display:flex;
+    gap: 15px;
+}
+.primeiraDiv3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+#link{
+    display: contents;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+/* alterando o fundo dos incones: icone do tiktok e do X ficou sem fundo, ai colocamos usando esses cod */
+#link a i {
+    font-size: 18px;
+    background-color: #fff;
+    border-radius: 4px;
+    color: #f8482f;
+}
+/* como o ja tinhamos o fundo do instagram em branco o codigo anterior acabou mudando, logo deixamos novamente o fundo do instagram branco */
+#link a .estilodiferente{
+    background-color: transparent;
+    color: #fff;
+    font-size: 22px;
+}
+.segundaDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: -50px;
+}
+.inputs{
+    width: 800px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background-color: #fff;
+}
+.inputs input{
+    width: 800px;
+    height: 40px;
+    border: none;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+.inputs label{
+    width: 30px;
+    height: 30px;
+    border: none;
+    padding-left: 10px;
+}
