@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+header{
+    background-color: #00050d;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+/* Colocando a cor branca quando o cursor estiver em cima do icone (do "a") */
+header a:hover{
+    background-color: #fff;
+    color:#00050d;
+    padding: 5px 8px;
+}
+a:hover .roda{
+    color: #00050d;
+}
+header a{
+    padding: 10px 10px;
+}
+header a i:hover{
+    color: #00050d;
+}
+
+
+
+
+.primeiraDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.primeiraDiv img{
+    
+    width: 96px;
+    cursor: pointer;
+    margin-right: 30px;
+    margin-left: 35px;
+}
+.primeiraDiv nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.primeiraDiv nav a.roda{
+    display: inline-block;
+    transform: rotate(90deg);
+    font-size: 20px;
+    gap: 2px;
+}
+
+
+#link{
+    display: flex;
+    align-items: center;
+}
+
+
+.segundaDiv{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.segundaDiv button:hover{
+    background-color: #fff;
+    color: #00050d;
+    border-radius: 50%;
+}
+/* "hover" quando o mouse estiver em cima */
+.segundaDiv button:hover{
+    background-color: #fff;
+    color: #00050d;
+    border-radius: 50%;
+}
+button:hover i{
+    color: #00050d;
+}
+.segundaDiv a:hover{
+    border-radius: 50%;
+}
+a:hover i{
+    color: #00050d;
+}
+.segundaDiv .imgs{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.segundaDiv .imgs:hover{
+    border: 3px solid #fff;
+}
+.segundaDiv img{
+    width: 30px;
+}
+.segundaDiv button{
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+}
+.segundaDiv i{
+    font-size: 20px;
+}
+
+
+
+#assinar{
+    background-color: #1a98ff;
+    margin-right: 30px;
+    padding: 11px 15px;
+    border-radius: 10px;
+}
+#assinar:hover{
+    background-color: #389ef1;
+}
