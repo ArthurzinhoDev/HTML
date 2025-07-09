@@ -97,3 +97,38 @@ h2{
     text-align: center;
     padding: 1rem;
 }
+#contato div {
+  border: 2px solid #333;
+  padding: 20px;
+  width: 300px;
+  background-color: #f9f9f9;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contato label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: Arial, sans-serif;
+}
+
+#contato input[type="text"] {
+  width: 100%;
+  padding: 6px;
+  margin-bottom: 15px;
+  border: 1px solid #999;
+  border-radius: 4px;
+}
+
+#contato button {
+  padding: 8px 16px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#contato button:hover {
+  background-color: #666;
+}
