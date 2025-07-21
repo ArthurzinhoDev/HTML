@@ -2,81 +2,86 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    }
+}
 
-    body {
+body {
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.6;
     background-color: #f5f5f5;
     color: #333;
-    }
+}
 
-    header {
+header {
     background-color: #434c74;
-    
     color: white;
     padding: 20px;
     text-align: center;
-    }
-    h1{ 
-        color: rgb(37, 37, 37);
-        font-size: 60px;
-        text-align: center;
- 
-    }
+}
 
-    .inicio {
+h1 {
+    color: rgb(37, 37, 37);
+    font-size: 60px;
+    text-align: center;
+}
+
+.inicio {
     padding: 20px 10px;
     text-align: center;
     background-color: #0b0f20;
-    
-    }
-    .inicio a{
-        color: #fff;
-        margin: 0 15px;
-        text-decoration: none;
-    }
+}
 
-    .sobre {
+.inicio a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+.sobre {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     padding: 4vh 10vw;
     gap: 40px;
-    }
+}
 
-    .sobre .texto {
-        flex: 1;
+.sobre .texto {
+    flex: 1;
     min-width: 280px;
-    }
+}
 
-    .sobre .imagem {
+.sobre .imagem {
     flex: 1;
     min-width: 280px;
     text-align: center;
-    }
+}
 
-    .sobre .imagem img {
-        
+.sobre .imagem img {
     max-width: 30%;
     height: auto;
     border-radius: 10px;
 }
 
-    .cards{
-    display:flex;
+.cards {
+    display: flex;
     justify-content: space-between;
     padding: 0vh 10vw 8vh 10vw;
-
+    flex-wrap: wrap;
+    gap: 20px;
 }
-    .card img{
+
+.card {
+    border: 0px solid #000000;
+    flex: 1 1 250px;
+    text-align: center;
+}
+
+.card img {
     max-width: 25vw;
+    width: 100%;
+    height: auto;
 }
-    .card{
-    border: px solid #000000;
 
-}
-    .card p{
+.card p {
     color: #000000;
     font-size: 25px;
     font-weight: 600;
@@ -84,31 +89,31 @@
     padding: 1rem;
 }
 
-    .contato {
+.contato {
     padding: 60px 20px;
     background-color: #eaeaea;
-    }
+}
 
-    .contato form {
+.contato form {
     max-width: 500px;
     margin: auto;
     display: flex;
     flex-direction: column;
-    }
+}
 
-    .contato label {
+.contato label {
     margin-top: 10px;
-    }
+}
 
-    .contato input,
-    .contato textarea {
+.contato input,
+.contato textarea {
     padding: 10px;
     margin-top: 5px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    }
+}
 
-    .contato button {
+.contato button {
     margin-top: 20px;
     padding: 12px;
     background-color: #0b0f20;
@@ -116,22 +121,118 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    }
+}
 
-    footer {
+footer {
     background-color: #0b0f20;
     color: white;
     text-align: center;
     padding: 20px;
-    }
+}
 
-    footer .social {
+footer .social {
     margin-top: 10px;
-    }
+}
 
-    footer .social a {
+footer .social a {
     margin: 0 10px;
     color: white;
     font-size: 24px;
     text-decoration: none;
+}
+
+/* ====================== */
+/* ===== RESPONSIVO ===== */
+/* ====================== */
+
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 40px;
     }
+
+    .sobre {
+        padding: 4vh 5vw;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card img {
+        max-width: 80vw;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav h2 {
+        font-size: 18px;
+    }
+
+    .inicio {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .sobre {
+        flex-direction: column;
+        padding: 4vh 5vw;
+        text-align: center;
+    }
+
+    .sobre .imagem img {
+        max-width: 60%;
+    }
+
+    .cards {
+        flex-direction: column;
+        padding: 4vh 5vw;
+    }
+
+    .card img {
+        max-width: 90vw;
+    }
+
+    .card p {
+        font-size: 20px;
+    }
+
+    .contato {
+        padding: 40px 10px;
+    }
+
+    .contato form {
+        width: 100%;
+    }
+
+    footer {
+        font-size: 14px;
+    }
+
+    footer .social a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 28px;
+    }
+
+    nav h2 {
+        font-size: 16px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+
+    .sobre .imagem img {
+        max-width: 90%;
+    }
+}
